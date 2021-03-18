@@ -6,7 +6,6 @@
 \usepackage[cmex10]{amsmath}
 
 \usepackage{amsthm}
-
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
@@ -109,6 +108,9 @@ columns=fullflexible
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\newcommand*{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+\newcommand*{\perm}[1][-3mu]{\permcomb[#1]{P}}
+\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
 \numberwithin{equation}{subsection}
 \makeatletter
 \@addtoreset{figure}{problem}
@@ -148,11 +150,24 @@ A box contains 4 white balls and 3 red balls. In succession, two balls are rando
 \section{Solution}
 No of white balls $=4,$ no of red balls $=3$.\\
 If first removed ball is white then remaining number of balls $=6(3$ white, 3 red $)$.\\
-We have 6 balls, one ball can be choose in ${ }^{6} C_{1}$ ways, Since there are three red balls so probability that the second ball is red is
+Consider,\\
+$W_1 = $First remove ball is White.\\
+$R_2 = $Second removed ball is Red.\\
+Since, $W_1\&R_2$ are independent events.\\
+So,
 \begin{align}
-P &=\frac{{ }^{6} C_{1}}{{ }^{3} C_{1}} \\
-&=\frac{3}{6} \\
-&=\frac{1}{2}
+Pr(W_1R_2) = Pr(W_1).Pr(R_2)
+\end{align} 
+And, required probability is 
+\begin{align}
+Pr(R_2/W_1) = \frac{Pr(W_1R_2)}{Pr(W_1)} = \frac{Pr(W_1).Pr(R_2)}{Pr(W_1)} = Pr(R_2)
 \end{align}
+We have 6 balls, one ball can be choose in $\comb{6}{1}$ ways, Since there are three red balls so probability that the second ball is red is $Pr(R_2)$
+\begin{enumerate}
+    \item[$=$]  $\comb{6}{1}/\comb{3}{1}$
+    \item[$=$]  3/6
+    \item[$=$]  1/2
+\end{enumerate}
+%P =6C1/3C1 = 3/6=1/2
 Hence $(\mathrm{C})$ is correct option.
 \end{document}
