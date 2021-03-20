@@ -150,9 +150,26 @@ A box contains 4 white balls and 3 red balls. In succession, two balls are rando
 \section{Solution}
 No of white balls $=4,$ no of red balls $=3$.\\
 If first removed ball is white then remaining number of balls $=6(3$ white, 3 red $)$.\\
-Consider, Bernoulli random variables Say $X_1$ and $X_2$
+Consider, Bernoulli random variables Say $X_1$ and $X_2$.
 \begin{table}[h]
-\begin{tabular}{ | m{2cm} | m{15em}| } 
+\renewcommand\thetable{1}
+\begin{tabular}{ | m{15em} | m{.5cm}| m{.8cm}|}
+\hline
+Ball colour                                       & Red & White \\
+\hline
+No. of Ball before remove                          & 3   & 4     \\
+\hline
+No. of Ball after remove(if removed ball is white) & 3   & 3     \\
+\hline
+No. of Ball after remove(if removed ball is red)   & 2   & 4     \\
+\hline
+\end{tabular}
+\caption{Ball in the Box}
+\label{table:Table} 
+\end{table}
+\begin{table}[h]
+\renewcommand\thetable{2}
+\begin{tabular}{ | m{1.9cm} | m{18em}| } 
 \hline
 $Pr(X_1=1)$& will refer to probability of First remove ball is White.\\ 
 \hline
@@ -164,25 +181,13 @@ $Pr(X_2=0)$ &  will refer to probability of Second removed ball is Red.\\
 \hline
 \end{tabular}
 \caption{Table for Bernoulli random variables.}
-\label{tab:truthTables} 
+\label{tab:Tables} 
 \end{table}
-
-Since, $X_1\&X_2$ are independent events.\\
-So,
-\begin{align}
-Pr(X_1=1, X_2=2) = Pr(X_1=1)Pr(X_2=2)
-\end{align} 
-And, required probability is 
+\\Since there are three red balls. Required probability is 
 \begin{align}
 Pr(X_1=1|X_2=2) = \frac{Pr(X_1=1, X_2=2)}{Pr(X_2=2)} \\
-= \frac{Pr(X_1=1)Pr(X_2=2)}{Pr(X_2=2)} = Pr(X_1=2)
+= \frac{\frac{4}{7}\times\frac{3}{6}}{\frac{4}{7}}=\frac{3}{6}
+=\frac{1}{2}
 \end{align}
-We have 6 balls, one ball can be choose in $\comb{6}{1}$ ways, Since there are three red balls so probability that the second ball is red is $Pr(X_1=1)$
-\begin{enumerate}
-    \item[$=$]  $\comb{6}{1}/\comb{3}{1}$
-    \item[$=$]  3/6
-    \item[$=$]  1/2
-\end{enumerate}
-%P =6C1/3C1 = 3/6=1/2
 Hence $(\mathrm{C})$ is correct option.
 \end{document}
