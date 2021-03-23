@@ -4,7 +4,7 @@
 \usepackage{gensymb}
 \singlespacing
 \usepackage[cmex10]{amsmath}
-
+\usepackage{multirow}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
@@ -15,7 +15,6 @@
 \usepackage{subfig}
 
 \usepackage{longtable}
-\usepackage{multirow}
 
 \usepackage{enumitem}
 \usepackage{mathtools}
@@ -148,43 +147,62 @@ A box contains 4 white balls and 3 red balls. In succession, two balls are rando
 (C) $\frac{1}{2}$
 (D) $\frac{4}{7}$
 \section{Solution}
-No of white balls $=4,$ no of red balls $=3$.\\
-If first removed ball is white then remaining number of balls $=6(3$ white, 3 red $)$.\\
 Consider, Bernoulli random variables Say $X_1$ and $X_2$.
-\begin{table}[h]
-\begin{tabular}{ | m{15em} | m{.5cm}| m{.8cm}|}
+\begin{table}[]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|}
 \hline
-Ball colour                                       & Red & White \\
-\hline
-No. of Ball before remove                          & 3   & 4     \\
-\hline
-No. of Ball after remove(if removed ball is white) & 3   & 3     \\
-\hline
-No. of Ball after remove(if removed ball is red)   & 2   & 4     \\
-\hline
-\end{tabular}
-\caption{Ball in the Box}
-\label{table:Table} 
+Ball colour &
+  Red &
+  White &
+  Random variable &
+  Probability refer  to &
+  Result \\ \hline
+\multirow{2}{*}{No. of Ball before remove} &
+  \multirow{2}{*}{3} &
+  \multirow{2}{*}{4} &
+  $Pr(X_1=1)$ &
+  probability of First remove ball is White &
+  $\frac{4}{7}$ \\ \cline{4-6} 
+ &
+   &
+   &
+  $Pr(X_1=0)$ &
+  probability of First remove ball is Red &
+  $\frac{3}{7}$ \\ \hline
+\multirow{2}{*}{No. of Ball after remove(if removed ball is white)} &
+  \multirow{2}{*}{3} &
+  \multirow{2}{*}{3} &
+  $Pr(X_1=1,X_2=1)$ &
+  Probability of  Second ball is White and First ball is White &
+  $\frac{4}{7}\times\frac{3}{6}=\frac{2}{7}$ \\ \cline{4-6} 
+ &
+   &
+   &
+  $Pr(X_1=1,X_2=0)$ &
+  Probability of Second ball is White and First ball is Red &
+  $\frac{4}{7}\times\frac{3}{6}=\frac{2}{7}$ \\ \hline
+\multirow{2}{*}{No. of Ball after remove(if removed ball is red)} &
+  \multirow{2}{*}{2} &
+  \multirow{2}{*}{4} &
+  $Pr(X_1=0,X_2=1)$ &
+  Probability of Second ball is Red and First ball is White &
+  $\frac{3}{7}\times\frac{4}{6}=\frac{2}{7}$ \\ \cline{4-6} 
+ &
+   &
+   &
+  $Pr(X_1=0,X_2=0)$ &
+  Probability of Second ball is Red and First ball is Red &
+  $\frac{3}{7}\times\frac{2}{6}=\frac{1}{7}$ \\ \hline
+\end{tabular}%
+}
+\caption{probability of random variables.}
+\label{tab:my-table}
 \end{table}
-\begin{table}[h]
-\begin{tabular}{ | m{1.9cm} | m{18em}| } 
-\hline
-$Pr(X_1=1)$& will refer to probability of First remove ball is White.\\ 
-\hline
- $Pr(X_1=0)$&  will refer to probability of First remove ball is Red.\\ 
-\hline
-$Pr(X_2=1)$ &  will refer to probability of Second removed ball is White.\\ 
-\hline
-$Pr(X_2=0)$ &  will refer to probability of Second removed ball is Red.\\ 
-\hline
-\end{tabular}
-\caption{Table for Bernoulli random variables.}
-\label{tab:Tables} 
-\end{table}
-\\Since there are three red balls. Required probability is 
+Required probability is 
 \begin{align}
-Pr(X_1=1|X_2=2) = \frac{Pr(X_1=1, X_2=2)}{Pr(X_2=2)} \\
-= \frac{\frac{4}{7}\times\frac{3}{6}}{\frac{4}{7}}=\frac{3}{6}
+Pr(X_2=0|X_1=1) = \frac{Pr(X_1=1, X_2=0)}{Pr(X_1=1)}\\
+= \frac{\frac{2}{7}}{\frac{4}{7}}=\frac{1}{2}
 =\frac{1}{2}
 \end{align}
 Hence $(\mathrm{C})$ is correct option.
