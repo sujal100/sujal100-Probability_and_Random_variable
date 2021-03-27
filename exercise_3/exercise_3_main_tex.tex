@@ -151,6 +151,68 @@ Let Consider, Bernoulli random variables say $X$. Here, $Pr(X=n)$ refer to the p
 \begin{align}
 Pr(X=1)=0, Pr(X=2)=\frac{1}{6^{2}}
 \end{align} 
+\begin{figure}
+\centering
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da22181978815813874] 
+\draw    (296,41) -- (404.07,103.2) ;
+\draw [shift={(405.8,104.2)}, rotate = 209.92000000000002] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da161455286927225] 
+\draw    (296,41) -- (196.48,105.12) ;
+\draw [shift={(194.8,106.2)}, rotate = 327.21000000000004] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da2511419168154414] 
+\draw    (123.8,133.2) -- (151.8,133.2) ;
+%Straight Lines [id:da06439769803839601] 
+\draw    (165.8,133.2) -- (193.8,133.2) ;
+%Straight Lines [id:da14609392755284478] 
+\draw    (341.8,134.2) -- (369.8,134.2) ;
+%Straight Lines [id:da38196067412588475] 
+\draw    (136.8,139.2) -- (137.7,158.2) ;
+\draw [shift={(137.8,160.2)}, rotate = 267.27] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da6427254369866533] 
+\draw    (175.8,139.2) -- (176.7,158.2) ;
+\draw [shift={(176.8,160.2)}, rotate = 267.27] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da7865775583247143] 
+\draw    (356.8,139.2) -- (357.7,158.2) ;
+\draw [shift={(357.8,160.2)}, rotate = 267.27] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+% Text Node
+\draw (255,15) node [anchor=north west][inner sep=0.75pt]   [align=left] {For};
+% Text Node
+\draw (124,114.4) node [anchor=north west][inner sep=0.75pt]    {$1/6$};
+% Text Node
+\draw (98,389.4) node [anchor=north west][inner sep=0.75pt]    {$$};
+% Text Node
+\draw (283,15.4) node [anchor=north west][inner sep=0.75pt]    {$Pr( X=n)$};
+% Text Node
+\draw (164,114.4) node [anchor=north west][inner sep=0.75pt]    {$5/6$};
+% Text Node
+\draw (341,115.4) node [anchor=north west][inner sep=0.75pt]    {$5/6$};
+% Text Node
+\draw (203,112.4) node [anchor=north west][inner sep=0.75pt]    {$\underbrace{Pr( X=n-2)}_{n-2}$};
+% Text Node
+\draw (385,113.4) node [anchor=north west][inner sep=0.75pt]    {$\underbrace{Pr( X=n-1)}_{n-1}$};
+% Text Node
+\draw (307,116) node [anchor=north west][inner sep=0.75pt]   [align=left] {OR};
+% Text Node
+\draw (104,157) node [anchor=north west][inner sep=0.75pt]   [align=left] {Here 6 \\ occur};
+% Text Node
+\draw (163,157) node [anchor=north west][inner sep=0.75pt]   [align=left] {Here 6\\ \ not\\ occur};
+% Text Node
+\draw (337,158) node [anchor=north west][inner sep=0.75pt]   [align=left] {Here 6\\ \ not\\ occur};
+% Text Node
+\draw (149,114.4) node [anchor=north west][inner sep=0.75pt]    {$\times $};
+% Text Node
+\draw (188.8,113.6) node [anchor=north west][inner sep=0.75pt]    {$\times $};
+% Text Node
+\draw (368,114.4) node [anchor=north west][inner sep=0.75pt]    {$\times $};
+\end{tikzpicture}
+\label{fig:my_label}
+\end{figure}
 For $n>2,$ we remark that the first roll is either a 6 or it isn't. If it is, then the second roll can't be a 6. That leads to the recursion
 \begin{align}
 Pr(X=n)=\frac{1}{6} \times \frac{5}{6} \times Pr(X=n-2)+\frac{5}{6} \times Pr(X=n-1)
@@ -162,4 +224,5 @@ So,
 &Pr(X=5)=\frac{5}{6^{2}}Pr(X=3)+\frac{5}{6}Pr(X=4)=\frac{25+150}{6^{5}}=\frac{175}{6^{5}}
 \end{align}
 Hence $(\mathrm{C})$ is correct option.
+
 \end{document}
