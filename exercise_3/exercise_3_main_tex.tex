@@ -147,9 +147,9 @@ In an experiment, a fair die is rolled until two sixes are obtained in successio
 (C) $\frac{175}{6^{5}}$
 (D) $\frac{200}{6^{5}}$
 \section{Solution}
-Let Consider, Bernoulli random variables say $X$. Here, $Pr(X=n)$ refer to the probability that experiment ends in exactly $n^{th}$ rolls. Thus, problem is asking for $Pr(X=5).$ We note that
+Let Consider, Bernoulli random variables say $X$. Here, $P_x(n)$ refer to the probability that experiment ends in exactly $n^{th}$ rolls. Thus, problem is asking for $P_x(5).$ We note that
 \begin{align}
-Pr(X=1)=0, Pr(X=2)=\frac{1}{6^{2}}
+P_x(1)=0, P_x(2)=\frac{1}{6^{2}}
 \end{align} 
 \begin{figure}
 \centering
@@ -216,21 +216,16 @@ Pr(X=1)=0, Pr(X=2)=\frac{1}{6^{2}}
 
 For $n>2,$ we remark that the first roll is either a 6 or it isn't. If it is, then the second roll can't be a 6. That leads to the recursion
 \begin{align}
-Pr(X=n)=\frac{1}{6} \times \frac{5}{6} \times Pr(X=n-2)\\
-+\frac{5}{6} \times Pr(X=n-1)
+P_x(n)=\frac{1}{6} \times \frac{5}{6} \times P_x(n-2)+\frac{5}{6} \times P_x(n-1)
 \end{align}
 So,
 \begin{align}
-&Pr(X=3)=\frac{5}{6^{2}}Pr(X=1)+\frac{5}{6}Pr(X=2)=\frac{5}{6^{3}}
-\end{align}
-similarly,
-\begin{align}
-&Pr(X=4)=\frac{5}{6^{2}}Pr(X=2)+\frac{5}{6}Pr(X=3)=\frac{30}{6^{4}}=\frac{5}{6^{3}}
+&P_x(3)=\frac{5}{6^{2}}P_x(1)+\frac{5}{6}P_x(2)=\frac{5}{6^{3}}\\
+&P_x(4)=\frac{5}{6^{2}}P_x(2)+\frac{5}{6}P_x(3)=\frac{30}{6^{4}}=\frac{5}{6^{3}}
 \end{align}
 therefore,
 \begin{align}
-Pr(X=5)=\frac{5}{6^{2}}Pr(X=3)+\frac{5}{6}Pr(X=4)\\
-=\frac{25+150}{6^{5}}=\frac{175}{6^{5}}
+P_x(5)=\frac{5}{6^{2}}P_x(3)+\frac{5}{6}P_x(4)=\frac{25+150}{6^{5}}=\frac{175}{6^{5}}
 \end{align}
 Hence $(\mathrm{C})$ is correct option.
 
