@@ -142,10 +142,12 @@ https://github.com/https://github.com/sujal100/Probability_and_Random_variable/b
 \end{lstlisting}
 \section{Problem [GATE(2015)MA-11]}
 In an experiment, a fair die is rolled until two sixes are obtained in succession. The probability that the experiment will end in the fifth trial is equal to\\
-(A) $\frac{125}{6^{5}}$
-(B) $\frac{150}{6^{5}}$
-(C) $\frac{175}{6^{5}}$
-(D) $\frac{200}{6^{5}}$
+\begin{enumerate}[label=\alph*)]
+\item $\dfrac{125}{6^{5}}$
+\item $\dfrac{150}{6^{5}}$
+\item $\dfrac{175}{6^{5}}$
+\item $\dfrac{200}{6^{5}}$
+\end{enumerate}
 \section{Solution}
 Let Consider, Bernoulli random variables say $X$. Here, $P(X=n)$ refer to the probability that experiment ends in exactly $n^{th}$ rolls. Thus, problem is asking for $p_5.$ We note that
 \begin{align}
@@ -187,7 +189,7 @@ p_1=0, p_2=\frac{1}{6^{2}}
 % Text Node
 \draw (98,389.4) node [anchor=north west][inner sep=0.75pt]    {$ $};
 % Text Node
-\draw (283,15.4) node [anchor=north west][inner sep=0.75pt]    {$pr_x(n)$};
+\draw (283,15.4) node [anchor=north west][inner sep=0.75pt]    {$p_x(n)$};
 % Text Node
 \draw (164,114.4) node [anchor=north west][inner sep=0.75pt]    {$5/6$};
 % Text Node
@@ -232,22 +234,22 @@ p_{n+2}=\frac{5}{6^{2}}p_{n}+\frac{5}{6}p_{n+1},p_0=\frac{1}{5},p_1=0
 Taking, Z-transform both side,
 \begin{align}
 Z[p_{n+2}]=&\frac{5}{6^{2}}Z[p_{n}]+\frac{5}{6}Z[p_{n+1}]\\
-z^2P(z)-z^2p_0-zp_1=&\frac{5}{6^2}P(z)+\frac{5}{6}[zP(z)-zp_0]
+z^2\Pr{z}-z^2p_0-zp_1=&\frac{5}{6^2}\Pr{z}+\frac{5}{6}[z\Pr{z}-zp_0]
 \end{align}
 Inserting initial conditions,
 \begin{align}
-z^2P(z)-\frac{z^2}{5}=&\frac{5}{6^2}P(z)+\frac{5z}{6}P(z)-\frac{z}{6} \\
-P(z)=&\dfrac{\brak{\dfrac{z^2}{5}-\dfrac{z}{6^2}}}{\brak{z^2-\dfrac{5z}{6}-\dfrac{5}{6^2}}}\\
-\frac{5P(z)}{z}=&\frac{36z-5}{36z^2-5z-5}
+z^2\pr{z}-\frac{z^2}{5}=&\frac{5}{6^2}\pr{z}+\frac{5z}{6}\Pr{z}-\frac{z}{6} \\
+\pr{z}=&\dfrac{\brak{\dfrac{z^2}{5}-\dfrac{z}{6^2}}}{\brak{z^2-\dfrac{5z}{6}-\dfrac{5}{6^2}}}\\
+\frac{5\pr{z}}{z}=&\frac{36z-5}{36z^2-5z-5}
 \end{align}
 \begin{align}
-\frac{5\sqrt{745}P(z)}{36}=\frac{(5+\sqrt{745})z}{(72 z+\sqrt{745}-5)}\\
+\frac{5\sqrt{745}\pr{z}}{36}=\frac{(5+\sqrt{745})z}{(72 z+\sqrt{745}-5)}\\
 -\frac{(\sqrt{745}-5)z}{(-72 z+\sqrt{745}+5)}
 \end{align}
 We know that $Z^{-1}\brak{\dfrac{z}{z-a}}=a^n$\\
 So, taking Z-inverse transform both side,we get
 \begin{align}
-\frac{5\sqrt{745}}{36}Z^{-1}\brak{P(z)}=\dfrac{(5+\sqrt{745})}{72}Z^{-1}\brak{\frac{z}{z-\frac{(5-\sqrt{745})}{72}}}\\
+\frac{5\sqrt{745}}{36}Z^{-1}\pr{z}=\dfrac{(5+\sqrt{745})}{72}Z^{-1}\brak{\frac{z}{z-\frac{(5-\sqrt{745})}{72}}}\\
 -\frac{(5-\sqrt{745})}{72}Z^{-1}\brak{\frac{z}{z-\frac{(\sqrt{745}+5)}{72}}}
 \end{align}
 \begin{align}
