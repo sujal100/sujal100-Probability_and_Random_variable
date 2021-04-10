@@ -148,25 +148,30 @@ almost surely
 \end{enumerate}
 
 \section{Solution}
-We know that in almost surely
-\begin{align}
+We using convergence in almost surely and Strong law of large number (SLLN)\\
+Suppose $X_{n}, X$ are random variables on the same probability space. Then,\\
+\begin{enumerate}
+\item If $X_{n} \stackrel{\text { a.s. }}{\rightarrow} X$, then $X_{n} \stackrel{P}{\rightarrow} X$.
+\item If $X_{n} \stackrel{P}{\rightarrow} X$ so that $\sum_{n} \mathbf{P}\left(\left|X_{n}-X\right|>\delta\right)<\infty$ for every $\delta>0$, then $X_{n} \stackrel{a_{\cdot B}}{\rightarrow} X$
+\item (SLLN) Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
+\item $X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} g(X)$
+\end{enumerate}
+\begin{enumerate}[label=\alph*)]
+\item\begin{align}
 \dfrac{1}{n}\left(X_{1}+\cdots+X_{n}\right) \rightarrow E(X)\in(-1,2)
 \end{align}
 as $n\rightarrow\infty,$ according to strong law of large numbers (SLLN).\\
-So, option $(\mathrm{A})$ is incorrect.\\
-In almost surely
-\begin{align}
-X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} g(X)
-\end{align}
-So, in almost surely,
-\begin{align}
-\left\{\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i}-\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i-1}\right\}&\rightarrow \left\{\dfrac{1}{2 n}nX-\dfrac{1}{2 n}nX\right\}\\
+So, option $(\mathrm{A})$ is incorrect.
+\item \begin{align}
+\left\{\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i}-\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i-1}\right\}&\stackrel{a.s.}{\rightarrow}\left\{\dfrac{nX}{2 n}-\dfrac{nX}{2 n}\right\}\\
 &=0
 \end{align}
-So, using $X_i \stackrel{a.s.}{\rightarrow} X$ this , we also conclude that
+option $(\mathrm{B})$ is correct.
+\item using $X_i \stackrel{a.s.}{\rightarrow} X$ this , we also conclude that
 \begin{align}
-\sup \left\{X_{1}, X_{2}, \ldots\right\}&=2 \,a.s.\\
-\inf \left\{X_{1}, X_{2}, \ldots\right\}&=-1 \, a.s.
+\sup \left\{X_{1}, X_{2}, \ldots\right\}&=2 \;almost\; surely\\
+\inf \left\{X_{1}, X_{2}, \ldots\right\}&=-1 \;almost\; surely
 \end{align}
 Hence $(\mathrm{B}),(\mathrm{C})$ and $(\mathrm{D})$ are correct option.
+\end{enumerate}
 \end{document}
