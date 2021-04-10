@@ -149,13 +149,18 @@ having common density $f$. Assume $f(x)=f(-x)$ for all $x \in \mathbb{R}$. Which
 
 \section{Solution}
 In this question $f(x)=f(-x)\implies$ Symmetry about Zero$,x\in\mathbb{R}.$\\
-We know that in almost surely
-\begin{align}
-\dfrac{1}{n}\left(X_{1}+\cdots+X_{n}\right) \rightarrow E(X_i)<\infty,
-\end{align}
-as $n\rightarrow\infty,$ according to strong law of large numbers (SLLN). So, also in probability also hold this equation.\\ 
-Hence $,(\mathrm{A})$ and $(\mathrm{B})$ are incorrect option\\
-$X_{1}, X_{2}, \cdots,X_n$ are independent identically distribute $\sim N[0,2]$\\
+We using convergence in almost surely and Strong law of large number (SLLN)\\
+Suppose $X_{n}, X$ are random variables on the same probability space. Then,\\
+\begin{enumerate}
+\item If $X_{n} \stackrel{\text { a.s. }}{\rightarrow} X$, then $X_{n} \stackrel{P}{\rightarrow} X$.
+\item If $X_{n} \stackrel{P}{\rightarrow} X$ so that $\sum_{n} \mathbf{P}\left(\left|X_{n}-X\right|>\delta\right)<\infty$ for every $\delta>0$, then $X_{n} \stackrel{a_{\cdot B}}{\rightarrow} X$
+\item (SLLN) Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
+\end{enumerate}
+\begin{enumerate}[label=\alph*)]
+\item using SLLN, $(\mathrm{B})$ are incorrect option.
+\item also in probability also hold this equation.\\
+Hence $(\mathrm{A})$ are incorrect option.  
+\item $X_{1}, X_{2}, \cdots,X_n$ are independent identically distribute $\sim N[0,2]$\\
 Consider,
 \begin{align}
 Y=\dfrac{X_{1}+ X_{2}+ \cdots + X_n}{\sqrt{n}}
@@ -175,19 +180,19 @@ P(Y<0)=\frac{1}{2}
 \begin{align}
 P\left(\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0\right)=\frac{1}{2}
 \end{align}
-Hence$,(\mathrm{C})$ is incorrect option.\\
-Now, for option $(\mathrm{D})$ consider $\phi_{x}(t)$ is characteristic function of $X_{i}, i=1, \ldots, n.$
+Hence$,(\mathrm{C})$ is incorrect option.
+\item Consider $\phi_{x}(t)$ is characteristic function of $X_{i}, i=1, \ldots, n.$
 \begin{align}
 f(x)=f(-x)\implies \phi_{x}(t)=\phi_{-x}(t)
 \end{align}
 Therefore,
 \begin{align}
-\phi_{\sum_{i=1}^{n}X_i}(t) = \phi_{X_{1}+\ldots +X_{n}}(t) &=\phi_{X_{1}}(t) \cdot \phi_{X_{2}}(t)\cdots\phi_{X_{n}}(t)\\
+\phi_{\sum_{i=1}^{n}X_i}(t) = \phi_{X_{1}+\ldots +X_{n}}(t) &=\phi_{X_{1}}(t)\cdots\phi_{X_{n}}(t)\\
 &=\left[\phi_{x}(t)\right]^{n}
 \end{align}
 similarly,
 \begin{align}
-\phi_{\sum_{i=1}^{n}(-1)^{i}X_i}(t) &= \phi_{-X_{1}}+\phi_{X_{2}}+\phi_{-X_{3}}+\ldots +\phi_{(-1)^{n}X_{n}}(t)\\
+\phi_{\sum_{i=1}^{n}(-1)^{i}X_i}(t) &= \phi_{-X_{1}}+\phi_{X_{2}}+\ldots +\phi_{(-1)^{n}X_{n}}(t)\\
 &=\phi_{-X_{1}}(t) \cdot \phi_{X_{2}}(t)\cdots\phi_{(-1)^{n}X_{n}}(t)\\
 &=\left[\phi_{x}(t)\right]^{n}
 \end{align}
@@ -195,5 +200,7 @@ similarly,
 \phi_{\sum_{i=1}^{n}X_i}(t) &= \phi_{\sum_{i=1}^{n}(-1)^{i}X_i}(t)
 \end{align}
 Therefore, $\sum_{i=1}^{n} X_{i}$ has same distribution as $\sum_{i=1}^{n}(-1)^{i} X_{i}.$\\
-Hence$,(\mathrm{D})$ is correct option.
+Hence, only $(\mathrm{D})$ is correct option.
+\end{enumerate}
+
 \end{document}
