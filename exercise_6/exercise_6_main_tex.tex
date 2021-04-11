@@ -149,12 +149,18 @@ having common density $f$. Assume $f(x)=f(-x)$ for all $x \in \mathbb{R}$. Which
 
 \section{Solution}
 In this question $f(x)=f(-x)\implies$ Symmetry about Zero$,x\in\mathbb{R}.$\\
-We using convergence in almost surely and Strong law of large number (SLLN)\\
-Suppose $X_{n}, X$ are random variables on the same probability space. Then,\\
+We using
 \begin{enumerate}
-\item If $X_{n} \stackrel{\text { a.s. }}{\rightarrow} X$, then $X_{n} \stackrel{P}{\rightarrow} X$.
-\item If $X_{n} \stackrel{P}{\rightarrow} X$ so that $\sum_{n} \mathbf{P}\left(\left|X_{n}-X\right|>\delta\right)<\infty$ for every $\delta>0$, then $X_{n} \stackrel{a_{\cdot B}}{\rightarrow} X$
-\item (SLLN) Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
+\item Convergence in probability,
+\item Convergence in almost surely,
+\item relationship is between convergence in probability and convergence in probability almost surely,
+\item Strong law of large number (SLLN)
+\end{enumerate}
+\begin{enumerate}
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if for all $\epsilon>0, \lim _{n \rightarrow \infty} P\left(\left|X_{n}-Y\right| \geq \epsilon\right)=0$, and we write $X_{n} \stackrel{P}{\rightarrow} Y$.
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if $P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1$ and we write $X_{n} \stackrel{a . s .}{\rightarrow} Y$
+\item Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say $Z_n \stackrel{a.s.}{\rightarrow} Z \implies Z_n \stackrel{P}{\rightarrow} Z $.
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, If $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{a.s.}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{P}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
 \end{enumerate}
 \begin{enumerate}[label=\alph*)]
 \item using SLLN, $(\mathrm{B})$ are incorrect option.
