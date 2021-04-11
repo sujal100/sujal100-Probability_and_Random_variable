@@ -148,12 +148,10 @@ almost surely
 \end{enumerate}
 
 \section{Solution}
-We using convergence in almost surely and Strong law of large number (SLLN)\\
-Suppose $X_{n}, X$ are random variables on the same probability space. Then,\\
+We using convergence in almost surely and Strong law of large number (SLLN)
 \begin{enumerate}
-\item If $X_{n} \stackrel{\text { a.s. }}{\rightarrow} X$, then $X_{n} \stackrel{P}{\rightarrow} X$.
-\item If $X_{n} \stackrel{P}{\rightarrow} X$ so that $\sum_{n} \mathbf{P}\left(\left|X_{n}-X\right|>\delta\right)<\infty$ for every $\delta>0$, then $X_{n} \stackrel{a_{\cdot B}}{\rightarrow} X$
-\item (SLLN) Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if $P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1$ and we write $X_{n} \stackrel{a . s .}{\rightarrow} Y$
+\item Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
 \item $X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} g(X)$
 \end{enumerate}
 \begin{enumerate}[label=\alph*)]
