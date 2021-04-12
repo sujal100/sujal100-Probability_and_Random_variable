@@ -153,14 +153,35 @@ We using
 \begin{enumerate}
 \item Convergence in probability,
 \item Convergence in almost surely,
-\item relationship is between convergence in probability and convergence in probability almost surely,
+\item relationship is between convergence in probability and convergence in almost surely,
 \item Strong law of large number (SLLN)
 \end{enumerate}
 \begin{enumerate}
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if for all $\epsilon>0, \lim _{n \rightarrow \infty} P\left(\left|X_{n}-Y\right| \geq \epsilon\right)=0$, and we write $X_{n} \stackrel{P}{\rightarrow} Y$.
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if $P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1$ and we write $X_{n} \stackrel{a . s .}{\rightarrow} Y$
-\item Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say $Z_n \stackrel{a.s.}{\rightarrow} Z \implies Z_n \stackrel{P}{\rightarrow} Z $.
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, If $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{a.s.}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{P}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if
+\begin{align}
+\forall \epsilon>0, \lim _{n \rightarrow \infty} P\left(\left|X_{n}-Y\right| \geq \epsilon\right)=0,
+\end{align}
+and we write 
+\begin{align}
+X_{n} \stackrel{P}{\rightarrow} Y.
+\end{align}
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if 
+\begin{align}
+P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1
+\end{align}
+and we write
+\begin{align}
+X_{n} \stackrel{a . s .}{\rightarrow} Y
+\end{align}
+\item Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say 
+\begin{align}
+ Z_n \stackrel{a.s.}{\rightarrow} Z \implies Z_n \stackrel{P}{\rightarrow} Z.
+\end{align}
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, If $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have 
+\begin{align}
+\dfrac{S_{n}}{n} \stackrel{a.s.}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{P}{\rightarrow} \mathbf{E}\left[X_{1}\right],\\
+\text{where} ,\,S_n = X_1 + \cdots + X_n
+\end{align}  
 \end{enumerate}
 \begin{enumerate}[label=\alph*)]
 \item using SLLN, $(\mathrm{B})$ are incorrect option.
@@ -187,7 +208,7 @@ P(Y<0)=\frac{1}{2}
 P\left(\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0\right)=\frac{1}{2}
 \end{align}
 Hence$,(\mathrm{C})$ is incorrect option.
-\item Consider $\phi_{x}(t)$ is characteristic function of $X_{i}, i=1, \ldots, n.$
+\item Consider, $\phi_{x}(t)$ is characteristic function of $X_{i}, i=1, \ldots, n.$
 \begin{align}
 f(x)=f(-x)\implies \phi_{x}(t)=\phi_{-x}(t)
 \end{align}
@@ -200,13 +221,10 @@ similarly,
 \begin{align}
 \phi_{\sum_{i=1}^{n}(-1)^{i}X_i}(t) &= \phi_{-X_{1}}+\phi_{X_{2}}+\ldots +\phi_{(-1)^{n}X_{n}}(t)\\
 &=\phi_{-X_{1}}(t) \cdot \phi_{X_{2}}(t)\cdots\phi_{(-1)^{n}X_{n}}(t)\\
-&=\left[\phi_{x}(t)\right]^{n}
-\end{align}
-\begin{align}
+&=\left[\phi_{x}(t)\right]^{n}\\
 \phi_{\sum_{i=1}^{n}X_i}(t) &= \phi_{\sum_{i=1}^{n}(-1)^{i}X_i}(t)
 \end{align}
-Therefore, $\sum_{i=1}^{n} X_{i}$ has same distribution as $\sum_{i=1}^{n}(-1)^{i} X_{i}.$\\
+$\therefore \sum_{i=1}^{n} X_{i}$ has same distribution as $\sum_{i=1}^{n}(-1)^{i} X_{i}.$\\
 Hence, only $(\mathrm{D})$ is correct option.
 \end{enumerate}
-
 \end{document}
