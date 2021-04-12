@@ -150,15 +150,27 @@ almost surely
 \section{Solution}
 We using convergence in almost surely and Strong law of large number (SLLN)
 \begin{enumerate}
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if $P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1$ and we write $X_{n} \stackrel{a . s .}{\rightarrow} Y$
-\item Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have $\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]  $, where $S_n = X_1 + \cdots + X_n.$
-\item $X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} g(X)$
+\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if 
+\begin{align}
+P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1 \\ 
+\text{and we write}, X_{n} \stackrel{a . s .}{\rightarrow} Y
+\end{align} 
+\item Let $X_{n}$ be i.i.d with $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have
+\begin{align}
+\dfrac{S_{n}}{n} \stackrel{\text { a.s. }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{\text { P }}{\rightarrow} \mathbf{E}\left[X_{1}\right]\\
+,\text{where} \, S_n = X_1 + \cdots + X_n
+\end{align}   
+also,
+\begin{align}
+X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} g(X)
+\end{align}
 \end{enumerate}
 \begin{enumerate}[label=\alph*)]
 \item\begin{align}
-\dfrac{1}{n}\left(X_{1}+\cdots+X_{n}\right) \rightarrow E(X)\in(-1,2)
+\dfrac{1}{n}\left(X_{1}+\cdots+X_{n}\right) \rightarrow E(X)\in(-1,2)\\
+\text{as} \, n\rightarrow\infty,
 \end{align}
-as $n\rightarrow\infty,$ according to strong law of large numbers (SLLN).\\
+according to strong law of large numbers (SLLN).\\
 So, option $(\mathrm{A})$ is incorrect.
 \item \begin{align}
 \left\{\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i}-\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i-1}\right\}&\stackrel{a.s.}{\rightarrow}\left\{\dfrac{nX}{2 n}-\dfrac{nX}{2 n}\right\}\\
