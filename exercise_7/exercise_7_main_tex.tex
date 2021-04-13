@@ -163,6 +163,7 @@ P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1 \\
 also,
 \begin{align}
 X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} g(X)
+\label{Eq}  
 \end{align}
 \end{enumerate}
 \begin{enumerate}[label=\alph*)]
@@ -172,14 +173,27 @@ X_i \stackrel{a.s.}{\rightarrow} X \implies g(X_i) \stackrel{a.s.}{\rightarrow} 
 \end{align}
 according to strong law of large numbers (SLLN).\\
 So, option $(\mathrm{A})$ is incorrect.
-\item \begin{align}
+\item using this \ref{Eq} , we solve as
+\begin{align}
 \left\{\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i}-\dfrac{1}{2 n} \sum_{i=1}^{n} X_{2 i-1}\right\}&\stackrel{a.s.}{\rightarrow}\left\{\dfrac{nX}{2 n}-\dfrac{nX}{2 n}\right\}\\
 &=0
 \end{align}
 option $(\mathrm{B})$ is correct.
-\item using $X_i \stackrel{a.s.}{\rightarrow} X$ this , we also conclude that
+\item A lower bound of a subset $S$ of a partially ordered set $(P, \leq)$ is an element $a$ of $P$ such that
 \begin{align}
-\sup \left\{X_{1}, X_{2}, \ldots\right\}&=2 \;almost\; surely\\
+a \leq x \: \forall x \in S
+\end{align}
+A lower bound $a$ of $S$ is called an infimum (or greatest lower bound, or meet) of $S$ if for all lower bounds $y$ of $S$ in $P, y \leq a(a$ is larger than or equal to any other lower bound).Using $X_i \stackrel{a.s.}{\rightarrow} X$ this , we  conclude that
+\begin{align}
+\sup \left\{X_{1}, X_{2}, \ldots\right\}&=2 \;almost\; surely
+\end{align}
+\item Similarly, an upper bound of a subset $S$ of a partially ordered set $(P, \leq)$ is an element $b$ of $P$ such that
+\begin{align}
+b \geq x \: \forall x \in S
+\end{align}
+An upper bound $b$ of $S$ is called a supremum (or least upper bound, or join) of $S$ if
+for all upper bounds $z$ of $S$ in $P, z \geq b(b$ is less than any other upper bound). Again using $X_i \stackrel{a.s.}{\rightarrow} X$ this , we conclude that
+\begin{align}
 \inf \left\{X_{1}, X_{2}, \ldots\right\}&=-1 \;almost\; surely
 \end{align}
 Hence $(\mathrm{B}),(\mathrm{C})$ and $(\mathrm{D})$ are correct option.
