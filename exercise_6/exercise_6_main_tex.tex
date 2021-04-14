@@ -148,15 +148,10 @@ having common density $f$. Assume $f(x)=f(-x)$ for all $x \in \mathbb{R}$. Which
 \end{enumerate}
 
 \section{Solution}
-In this question $f(x)=f(-x)\implies$ Symmetry about Zero$,x\in\mathbb{R}.$\\
 We using
-\begin{enumerate}
-\item Convergence in probability,
-\item Convergence in almost surely,
-\item relationship is between convergence in probability and convergence in almost surely,
-\item Strong law of large number (SLLN)
-\end{enumerate}
-\begin{enumerate}
+\begin{enumerate}[label=\alph*)]
+\item 
+\begin{enumerate}[label=(\arabic*)]
 \item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if
 \begin{align}
 \forall \epsilon>0, \lim _{n \rightarrow \infty} P\left(\left|X_{n}-Y\right| \geq \epsilon\right)=0,
@@ -173,19 +168,18 @@ and we write
 \begin{align}
 X_{n} \stackrel{a . s .}{\rightarrow} Y
 \end{align}
-\item Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say 
-\begin{align}
- Z_n \stackrel{a.s.}{\rightarrow} Z \implies Z_n \stackrel{P}{\rightarrow} Z.
-\end{align}
 \item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, If $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have 
 \begin{align}
 \dfrac{S_{n}}{n} \stackrel{a.s.}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{P}{\rightarrow} \mathbf{E}\left[X_{1}\right],\\
 \text{where} ,\,S_n = X_1 + \cdots + X_n
 \end{align}  
 \end{enumerate}
-\begin{enumerate}[label=\alph*)]
-\item using SLLN, $(\mathrm{B})$ are incorrect option.
-\item also in probability also hold this equation.\\
+using SLLN, $(\mathrm{B})$ are incorrect option.
+\item Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say 
+\begin{align}
+ Z_n \stackrel{a.s.}{\rightarrow} Z \implies Z_n \stackrel{P}{\rightarrow} Z.
+\end{align}
+also in probability also hold this equation.\\
 Hence $(\mathrm{A})$ are incorrect option.  
 \item $X_{1}, X_{2}, \cdots,X_n$ are independent identically distribute $\sim N[0,2]$\\
 Consider,
@@ -200,7 +194,11 @@ V(Y)= V\left(\dfrac{X_{1}+ X_{2}+ \cdots+X_n}{\sqrt{n}}\right)= \frac{1}{n}2n=2
 \begin{align}
 Y \sim N[0,2]
 \end{align}
-we know that $f(x)$ is symmetric about zero. So,
+we know that,
+\begin{align}
+f(x)=f(-x)\implies \text{Symmetry about Zero},
+\end{align}
+So,
 \begin{align}
 P(Y<0)=\frac{1}{2}
 \end{align}
@@ -208,7 +206,15 @@ P(Y<0)=\frac{1}{2}
 P\left(\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0\right)=\frac{1}{2}
 \end{align}
 Hence$,(\mathrm{C})$ is incorrect option.
-\item Consider, $\phi_{x}(t)$ is characteristic function of $X_{i}, i=1, \ldots, n.$
+\item 
+For a scalar random variable $X$ the characteristic function is defined as the expected value of $\mathrm{e}^{i t \times}$, where $i$ is the imaginary unit, and $t \in \mathbf{R}$ is the argument of the characteristic function:
+\begin{align}
+\left\{\begin{array}{l}
+\varphi_{X}: \mathbb{R} \rightarrow \mathbb{C} \\
+\varphi_{X}(t)=\mathrm{E}\left[e^{i t X}\right]=\int_{\mathbb{R}} e^{i t x} d F_{X}(x)\\=\int_{\mathbb{R}} e^{i t x} f_{X}(x) d x=\int_{0}^{1} e^{i t Q_{X}(p)} d p
+\end{array}\right.
+\end{align}
+Here $F_X$ is the cumulative distribution function of $X$,Consider, $\phi_{x}(t)$ is characteristic function of $X_{i}, i=1, \ldots, n.$
 \begin{align}
 f(x)=f(-x)\implies \phi_{x}(t)=\phi_{-x}(t)
 \end{align}
