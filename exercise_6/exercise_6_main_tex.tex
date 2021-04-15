@@ -143,7 +143,7 @@ having common density $f$. Assume $f(x)=f(-x)$ for all $x \in \mathbb{R}$. Which
 \begin{enumerate}[label=\alph*)]
 \item $\dfrac{1}{n}\left(X_{1}+\cdots+X_{n}\right) \rightarrow 0$ in probability
 \item $\dfrac{1}{n}\left(X_{1}+\cdots+X_{n}\right) \rightarrow 0$ almost surely
-\item $P\left(\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0\right) \rightarrow \dfrac{1}{2}$
+\item $\pr{\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0} \rightarrow \dfrac{1}{2}$
 \item $\sum_{i=1}^{n} X_{i}$ has the same distribution as $\sum_{i=1}^{n}(-1)^{i} X_{i}$
 \end{enumerate}
 
@@ -154,7 +154,7 @@ We using
 \begin{enumerate}[label=(\arabic*)]
 \item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if
 \begin{align}
-\forall \epsilon>0, \lim _{n \rightarrow \infty} P\left(\left|X_{n}-Y\right| \geq \epsilon\right)=0,
+\forall \epsilon>0, \lim _{n \rightarrow \infty} \pr{\left|X_{n}-Y\right| \geq \epsilon}=0,
 \end{align}
 and we write 
 \begin{align}
@@ -162,7 +162,7 @@ X_{n} \stackrel{P}{\rightarrow} Y.
 \end{align}
 \item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if 
 \begin{align}
-P\left(\lim _{n \rightarrow \infty} X_{n}=Y\right)=1
+\pr{\lim _{n \rightarrow \infty} X_{n}=Y}=1
 \end{align}
 and we write
 \begin{align}
@@ -200,10 +200,10 @@ f(x)=f(-x)\implies \text{Symmetry about Zero},
 \end{align}
 So,
 \begin{align}
-P(Y<0)=\frac{1}{2}
+\pr{Y<0}=\frac{1}{2}
 \end{align}
 \begin{align}
-P\left(\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0\right)=\frac{1}{2}
+\pr{\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0}=\frac{1}{2}
 \end{align}
 Hence$,(\mathrm{C})$ is incorrect option.
 \item 
