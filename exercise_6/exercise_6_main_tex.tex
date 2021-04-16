@@ -152,7 +152,7 @@ We using
 \begin{enumerate}[label=\alph*)]
 \item 
 \begin{enumerate}[label=(\arabic*)]
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if
+\item {\em Convergence in probability : }Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, and let $Y$ be another random variable. Then the sequence $\left\{X_{n}\right\}$ converges in probability to $Y$, if
 \begin{align}
 \forall \epsilon>0, \lim _{n \rightarrow \infty} \pr{\left|X_{n}-Y\right| \geq \epsilon}=0,
 \end{align}
@@ -160,7 +160,7 @@ and we write
 \begin{align}
 X_{n} \stackrel{P}{\rightarrow} Y.
 \end{align}
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if 
+\item {\em Convergence in almost surely : }Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables. We shall say that the sequence $\left\{X_{i}\right\}$ converges with probability 1 (or converges almost surely (a.s.)) to a random variable $Y$, if 
 \begin{align}
 \pr{\lim _{n \rightarrow \infty} X_{n}=Y}=1
 \end{align}
@@ -168,20 +168,25 @@ and we write
 \begin{align}
 X_{n} \stackrel{a . s .}{\rightarrow} Y
 \end{align}
-\item Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, If $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have 
+\item {\em Strong law of large number(SLLN) : }Let $X_{1}, X_{2}, \ldots$ be an infinite sequence of random variables, If $\mathbf{E}\left[\left|X_{1}\right|\right]<\infty$. Then, as $n \rightarrow \infty$ , we have 
 \begin{align}
 \dfrac{S_{n}}{n} \stackrel{a.s.}{\rightarrow} \mathbf{E}\left[X_{1}\right]\implies \dfrac{S_{n}}{n} \stackrel{P}{\rightarrow} \mathbf{E}\left[X_{1}\right],\\
 \text{where} ,\,S_n = X_1 + \cdots + X_n
 \end{align}  
 \end{enumerate}
 using SLLN, $(\mathrm{B})$ are incorrect option.
-\item Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say 
+\item {\em Relation between in probability and almost surely : }Let $Z, Z_{1}, Z_{2}, \ldots$ be random variables. Suppose $Z_{n} \rightarrow Z$ with probability 1. Then $Z_{n} \rightarrow Z$ in probability. That is, if a sequence of random variables converges almost surely, then it converges in probability to the same limit and we say 
 \begin{align}
  Z_n \stackrel{a.s.}{\rightarrow} Z \implies Z_n \stackrel{P}{\rightarrow} Z.
 \end{align}
 also in probability also hold this equation.\\
 Hence $(\mathrm{A})$ are incorrect option.  
-\item $X_{1}, X_{2}, \cdots,X_n$ are independent identically distribute $\sim N[0,2]$\\
+\item 
+{\em Central Limit Theorem : }Let $X_{1}, X_{2}, \ldots$ be i.i.d. with finite mean $\mu$ and finite variance $\sigma^{2}$. Let $Z \sim N(0,1) .$ Set $S_{n}=X_{1}+\cdots+X_{n}$, and
+\begin{align}
+Z_{n}=\frac{S_{n}-n \mu}{\sqrt{n \sigma^{2}}}
+\end{align}
+Then as $n \rightarrow \infty$, the sequence $\left\{Z_{n}\right\}$ converges in distribution to the $Z$, i.e., $Z_{n} \stackrel{D}{\rightarrow} Z$.\\
 Consider,
 \begin{align}
 Y=\dfrac{X_{1}+ X_{2}+ \cdots + X_n}{\sqrt{n}}
@@ -206,8 +211,7 @@ So,
 \pr{\dfrac{1}{\sqrt{n}}\left(X_{1}+\cdots+X_{n}\right)<0}=\frac{1}{2}
 \end{align}
 Hence$,(\mathrm{C})$ is incorrect option.
-\item 
-For a scalar random variable $X$ the characteristic function is defined as the expected value of $\mathrm{e}^{i t \times}$, where $i$ is the imaginary unit, and $t \in \mathbf{R}$ is the argument of the characteristic function:
+\item {\em Characteristic function : }For a scalar random variable $X$ the characteristic function is defined as the expected value of $\mathrm{e}^{i t \times}$, where $i$ is the imaginary unit, and $t \in \mathbf{R}$ is the argument of the characteristic function:
 \begin{align}
 \left\{\begin{array}{l}
 \varphi_{X}: \mathbb{R} \rightarrow \mathbb{C} \\
